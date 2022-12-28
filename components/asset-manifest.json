@@ -1,0 +1,15 @@
+{
+  "main.css": "/components/static/css/main.77ed89cf.chunk.css",
+  "main.js": "/components/static/js/main.0875de06.chunk.js",
+  "main.js.map": "/components/static/js/main.0875de06.chunk.js.map",
+  "runtime~main.js": "/components/static/js/runtime~main.35b5100b.js",
+  "runtime~main.js.map": "/components/static/js/runtime~main.35b5100b.js.map",
+  "static/js/2.62b629eb.chunk.js": "/components/static/js/2.62b629eb.chunk.js",
+  "static/js/2.62b629eb.chunk.js.map": "/components/static/js/2.62b629eb.chunk.js.map",
+  "index.html": "/components/index.html",
+  "precache-manifest.f81b5f3866ae5a72d653f218b82ec97f.js": "/components/precache-manifest.f81b5f3866ae5a72d653f218b82ec97f.js",
+  "service-worker.js": "/components/service-worker.js",
+  "static/css/main.77ed89cf.chunk.css.map": "/components/static/css/main.77ed89cf.chunk.css.map",
+  "static/media/bank.svg": "/components/static/media/bank.751793ea.svg",
+  "static/media/visa.svg": "/components/static/media/visa.6340b908.svg"
+}
