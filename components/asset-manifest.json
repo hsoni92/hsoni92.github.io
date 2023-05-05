@@ -1,15 +1,15 @@
 {
-  "main.css": "/components/static/css/main.77ed89cf.chunk.css",
-  "main.js": "/components/static/js/main.066bbafc.chunk.js",
-  "main.js.map": "/components/static/js/main.066bbafc.chunk.js.map",
-  "runtime~main.js": "/components/static/js/runtime~main.35b5100b.js",
-  "runtime~main.js.map": "/components/static/js/runtime~main.35b5100b.js.map",
-  "static/js/2.7d3375cf.chunk.js": "/components/static/js/2.7d3375cf.chunk.js",
-  "static/js/2.7d3375cf.chunk.js.map": "/components/static/js/2.7d3375cf.chunk.js.map",
-  "index.html": "/components/index.html",
-  "precache-manifest.630e3489e09c8a3aa6465a988e5d2385.js": "/components/precache-manifest.630e3489e09c8a3aa6465a988e5d2385.js",
-  "service-worker.js": "/components/service-worker.js",
-  "static/css/main.77ed89cf.chunk.css.map": "/components/static/css/main.77ed89cf.chunk.css.map",
-  "static/media/bank.svg": "/components/static/media/bank.751793ea.svg",
-  "static/media/visa.svg": "/components/static/media/visa.6340b908.svg"
+  "main.css": "/static/css/main.77ed89cf.chunk.css",
+  "main.js": "/static/js/main.3cac1522.chunk.js",
+  "main.js.map": "/static/js/main.3cac1522.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+  "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+  "static/js/2.b8692a85.chunk.js": "/static/js/2.b8692a85.chunk.js",
+  "static/js/2.b8692a85.chunk.js.map": "/static/js/2.b8692a85.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.d2134628b0014e8a204cfafd439b907a.js": "/precache-manifest.d2134628b0014e8a204cfafd439b907a.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/main.77ed89cf.chunk.css.map": "/static/css/main.77ed89cf.chunk.css.map",
+  "static/media/bank.svg": "/static/media/bank.751793ea.svg",
+  "static/media/visa.svg": "/static/media/visa.6340b908.svg"
 }
