@@ -1,0 +1,106 @@
+.login-main-container {
+  background: #ecf0f1;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-main-container .login-card {
+  min-width: 500px;
+  height: 530px;
+  border-radius: 10px !important;
+  box-shadow: unset !important;
+}
+.login-main-container .login-card .disabled.input {
+  opacity: 1;
+}
+.login-main-container .login-card .disabled.input input {
+  opacity: 0.45;
+}
+.login-main-container .login-card .alert-message-login {
+  width: 300px;
+}
+.login-main-container .login-card .login-form-el {
+  width: 300px;
+}
+.login-main-container .login-card .content {
+  display: flex;
+  justify-content: center;
+}
+.login-main-container .login-card .content.body {
+  border-top: none;
+}
+.login-main-container .login-card .header {
+  font-size: 2em !important;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.login-main-container .login-card .content-middle-container {
+  margin: 0px 120px 0px 120px;
+}
+.login-main-container .login-card .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+  padding-bottom: 20px;
+}
+.login-main-container .login-card .logo-container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
+
+.dashboard-page {
+  height: calc(100vh - 150px);
+}
+.list-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px 5px 0px;
+}
+.card-chart-container {
+  width: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+.header-with-label {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.dashboard-cards-group .card {
+  width: 100% !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+  flex-grow: 1;
+}
+.dashboard-cards-group {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+}
+
+.circle-icon {
+  height: 33px;
+  width: 33px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.circle-icon.red {
+  background-color: #ffebee;
+}
+.circle-icon.green {
+  background-color: #f1f8e9;
+}
+
