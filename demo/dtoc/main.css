@@ -10,6 +10,9 @@
   background: rgba(0, 0, 0, 0) !important;
   width: 100%;
 }
+.header button.navbar-toggler {
+  background: white;
+}
 .header .content {
   width: 60%;
   display: flex;
@@ -37,6 +40,7 @@
 .header .nav-links-mobile {
   width: 100%;
   height: 200px;
+  font-family: 'platnomor';
 }
 .header .nav-links-mobile .navbar-brand {
   margin-left: 20px;
@@ -49,6 +53,13 @@
   background: white;
   padding: 30px;
   border-radius: 5px;
+}
+.header .nav-links-mobile .nav-collapsible a {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.header .nav-links-mobile .nav-collapsible a:hover {
+  color: #05AD0A;
 }
 .app-logo {
   max-width: 100px;
@@ -720,7 +731,6 @@
   text-align: center;
 }
 .team .description p {
-  max-width: 50%;
   text-align: justify;
   font-size: 1.2em;
   padding-bottom: 2em;
