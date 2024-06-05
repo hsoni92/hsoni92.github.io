@@ -374,8 +374,9 @@
 }
 
 .landing-banner-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 .landing-banner-container .landing-banner-image {
   height: 100vh;
@@ -482,7 +483,9 @@
   stroke: #d62828;
 }
 .landing-banner-container-mobile {
+  width: 100vw;
   height: 200vh;
+  overflow-x: hidden;
 }
 .landing-banner-container-mobile .landing-banner-image {
   height: 200vh;
@@ -524,11 +527,14 @@
   margin-top: 70px;
   width: 100%;
   background: #fff;
-  padding: 40px;
+  padding: 40px 20px;
   border-radius: 7px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.landing-banner-container-mobile .landing-content .emergency-form .tollfree-container {
+  width: 100%;
 }
 .landing-banner-container-mobile .landing-content .emergency-form .tollFreeCallBtn {
   padding: 15px;
@@ -549,6 +555,9 @@
   color: #444;
   font-weight: bold;
   border: 1px solid #fff;
+}
+.landing-banner-container-mobile .landing-content .emergency-form .input-group {
+  border: 1px solid #d62828;
 }
 .landing-banner-container-mobile .landing-content .emergency-form input {
   background: #fff;
