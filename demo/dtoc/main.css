@@ -484,14 +484,15 @@
 }
 .landing-banner-container-mobile {
   width: 100vw;
-  height: 200vh;
+  height: 170vh;
   overflow-x: hidden;
 }
 .landing-banner-container-mobile .landing-banner-image {
-  height: 200vh;
+  height: 180vh;
   width: 100%;
 }
 .landing-banner-container-mobile .landing-content {
+  width: 100%;
   padding-left: 8vw !important;
   padding-right: 8vw !important;
   position: absolute;
@@ -500,23 +501,23 @@
 }
 .landing-banner-container-mobile .landing-content .info {
   z-index: 1;
-  width: 500px;
+  width: 100%;
   color: #444;
   text-align: center;
   font-family: PlatNomor;
-  font-size: 55px;
+  font-size: 3em;
   font-weight: bold;
   line-height: 64px;
 }
 .landing-banner-container-mobile .landing-content .info p:nth-child(1) {
-  font-size: 80px;
+  font-size: 2em;
 }
 .landing-banner-container-mobile .landing-content .info p:nth-child(3) {
-  font-size: 90px;
+  font-size: 1.5em;
   color: #F2FCF5;
 }
 .landing-banner-container-mobile .landing-content .info p:nth-child(4) {
-  font-size: 40px;
+  font-size: 1em;
   line-height: 40px;
 }
 .landing-banner-container-mobile .landing-content .info .branding-logo {
