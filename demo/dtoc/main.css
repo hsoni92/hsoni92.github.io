@@ -7,8 +7,11 @@
   display: flex;
   height: 70px;
   justify-content: space-between;
-  background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0);
   width: 100%;
+}
+.header .navbar-brand {
+  cursor: pointer;
 }
 .header button.navbar-toggler {
   background: white;
@@ -107,6 +110,12 @@
   width: 100%;
   max-width: 400px;
 }
+.footer .social-buttons svg {
+  cursor: pointer;
+}
+.footer .social-buttons svg:hover {
+  stroke: #05AD0A;
+}
 @media screen and (max-width: 992px) {
   .footer .credits p {
     font-size: 0.8em;
@@ -151,7 +160,7 @@
 .get-in-touch-landing .contact-form {
   z-index: 1;
   width: 85%;
-  margin-top: 50px;
+  margin-top: 20px;
   background: #ffffff;
   padding: 30px;
   border-radius: 10px;
@@ -167,7 +176,7 @@
   background: #F2FCF5;
 }
 .get-in-touch-landing .get-in-touch {
-  padding-top: 60px !important;
+  padding-top: 15px !important;
   height: 100vh;
   background: #05AD0A;
 }
@@ -197,6 +206,22 @@
   padding-bottom: 10px;
 }
 .contact-details .divided-elements .el-description {
+  color: #777;
+}
+
+.page-section.faq {
+  background: #F2FCF5;
+}
+.page-section.faq .accordion-button:not(.collapsed) {
+  background: #05AD0A;
+  color: #ffffff;
+}
+.page-section.faq .searchFormGroup {
+  padding-bottom: 70px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.page-section.faq .accordion-body {
   color: #777;
 }
 
@@ -309,16 +334,21 @@
 }
 .reach .counters {
   margin-top: 3em;
-  font-weight: 900;
+  width: 100%;
+  font-weight: bold;
   font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .reach .counters div:nth-child(1) {
   font-size: 3em;
 }
 .reach .counters div:nth-child(2) {
-  color: #05AD0A;
-  font-size: 1.6em;
-  font-family: PlatNomor;
+  color: #d62828;
+  font-size: 1.5em;
+  font-family: Platnomor;
 }
 @media screen and (max-width: 992px) {
   .reach .reach-img {
@@ -419,7 +449,11 @@
   border-radius: 15px;
   padding-left: 20px;
 }
+.landing-banner-container .landing-content .emergency-form .emergency-call-me-btn {
+  width: 80px;
+}
 .landing-banner-container .landing-content .emergency-form .tollFreeCallBtn {
+  width: 100%;
   padding: 15px;
   font-weight: bold;
   font-family: PlatNomor;
@@ -462,7 +496,6 @@
 .landing-banner-container .landing-content .emergency-form .subtitle {
   margin-top: 10px;
   font-size: 14px;
-  color: #777;
   background: #F2FCF5;
 }
 .landing-banner-container .floating-corner {
@@ -474,7 +507,18 @@
   display: flex;
   align-items: center;
 }
+.landing-banner-container .floating-corner .phone-icon {
+  border-radius: 30px;
+  height: 60px;
+  width: 110px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  background: white;
+  transform: translateX(50px);
+}
 .landing-banner-container .floating-corner button {
+  z-index: 1;
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -604,28 +648,15 @@
   stroke: #d62828;
 }
 
+.help-center-container {
+  background: #000;
+}
 .help-center-container .page-section {
   margin-top: 70px;
   background-color: #F2FCF5;
 }
 .help-center-container .page-section .contact-form {
   margin-top: 30px;
-}
-
-.page-section.faq {
-  background: #F2FCF5;
-}
-.page-section.faq .accordion-button:not(.collapsed) {
-  background: #05AD0A;
-  color: #ffffff;
-}
-.page-section.faq .searchFormGroup {
-  padding-bottom: 70px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.page-section.faq .accordion-body {
-  color: #777;
 }
 
 .about-us-container .ambulance-img {
@@ -704,11 +735,21 @@
   padding-top: 0em !important;
   background-color: #F2FCF5 !important;
 }
+.team .carousel a.carousel-control-prev {
+  width: fit-content;
+}
+.team .carousel a.carousel-control-next {
+  width: fit-content;
+}
+.team .carousel .carousel-indicators {
+  margin-bottom: 0px;
+  transform: translateY(1em);
+}
 .team .team-image {
-  width: 100%;
+  width: 30%;
   margin-top: 30px;
   background-color: #ffffff;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -782,111 +823,6 @@
   margin-right: 10%;
   display: flex;
   justify-content: center;
-}
-
-.dtocButton {
-  border: unset !important;
-  border-radius: 20px;
-  background-size: 200% 100% !important;
-  background-image: linear-gradient(to right, #d62828 50%, #B00000 50%) !important;
-  -webkit-transition: background-position 0.3s !important;
-  -moz-transition: background-position 0.3s !important;
-  transition: background-position 0.3s !important;
-}
-.dtocButton:hover {
-  background-position: -100% 0 !important;
-}
-.dtocButton-outline {
-  border: unset !important;
-  border-radius: 2px !important;
-  background-size: 200% 100% !important;
-  font-family: PlatNomor !important;
-  font-weight: bold !important;
-  letter-spacing: 1px;
-  background-image: linear-gradient(to right, #d62828 50%, #B00000 50%) !important;
-  -webkit-transition: background-position 0.3s !important;
-  -moz-transition: background-position 0.3s !important;
-  transition: background-position 0.3s !important;
-}
-.dtocButton-outline:hover {
-  background-position: -100% 0 !important;
-}
-.collapsible-text {
-  overflow: hidden;
-  /* Hide content that overflows */
-  transition: max-height 0.5s ease-out;
-  /* Transition the max-height property */
-  max-height: 0;
-  /* Initially collapse the content */
-}
-.collapsible-text.open {
-  max-height: 1000px;
-  /* Expand the content */
-}
-input:focus {
-  box-shadow: none !important;
-}
-.dtocFormGroup input,
-.dtocFormGroup textarea {
-  border-radius: 0px;
-  border: none !important;
-  border-bottom: 1px solid #05AD0A !important;
-  background: none;
-  color: #777;
-  padding-left: 0px;
-}
-.dtocFormGroup input:focus,
-.dtocFormGroup textarea:focus {
-  outline: none !important;
-  background: none;
-}
-.flex-end {
-  display: flex;
-  justify-content: flex-end;
-}
-/* Or prevent text selection for specific elements */
-.prevent-selection {
-  -webkit-user-select: none;
-  /* Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE 10+/Edge */
-  user-select: none;
-  /* Standard syntax */
-}
-.page-section {
-  background: #FAFAFB;
-  padding: 8vw;
-  padding-top: 0px !important;
-}
-.page-section.green {
-  background: #F2FCF5;
-}
-.page-section.white {
-  background: #ffffff;
-}
-.page-section .page-title {
-  font-size: 3em;
-  font-family: PlatNomor;
-  font-weight: 700;
-  padding-bottom: 0.5em;
-  padding-top: 0.8em;
-  color: #444;
-}
-.page-section .page-title.light {
-  color: #fff;
-}
-.page-section .page-title.right {
-  text-align: right;
-}
-.page-section .page-title span {
-  color: #05AD0A;
-}
-@media screen and (max-width: 992px) {
-  .page-section .page-title {
-    font-size: 2em;
-  }
 }
 
 .page-section.marketing-intro .description {
@@ -995,5 +931,122 @@ input:focus {
 .page-section.facilities .grid-button div:nth-child(1) svg {
   width: 50px;
   height: 50px;
+}
+
+.dtocButton {
+  border: unset !important;
+  border-radius: 20px;
+  background-size: 200% 100% !important;
+  background-image: linear-gradient(to right, #d62828 50%, #B00000 50%) !important;
+  -webkit-transition: background-position 0.3s !important;
+  -moz-transition: background-position 0.3s !important;
+  transition: background-position 0.3s !important;
+}
+.dtocButton:hover {
+  background-position: -100% 0 !important;
+}
+.dtocButton-outline {
+  border: unset !important;
+  border-radius: 2px !important;
+  background-size: 200% 100% !important;
+  font-family: PlatNomor !important;
+  font-weight: bold !important;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, #d62828 50%, #B00000 50%) !important;
+  -webkit-transition: background-position 0.3s !important;
+  -moz-transition: background-position 0.3s !important;
+  transition: background-position 0.3s !important;
+}
+.dtocButton-outline:hover {
+  background-position: -100% 0 !important;
+}
+.collapsible-text {
+  overflow: hidden;
+  /* Hide content that overflows */
+  transition: max-height 0.5s ease-out;
+  /* Transition the max-height property */
+  max-height: 0;
+  /* Initially collapse the content */
+}
+.collapsible-text.open {
+  max-height: 1000px;
+  /* Expand the content */
+}
+input:focus {
+  box-shadow: none !important;
+}
+.dtocFormGroup input,
+.dtocFormGroup textarea {
+  border-radius: 0px;
+  border: none !important;
+  border-bottom: 1px solid #05AD0A !important;
+  background: none;
+  color: #777;
+  padding-left: 0px;
+}
+.dtocFormGroup input:focus,
+.dtocFormGroup textarea:focus {
+  outline: none !important;
+  background: none;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+/* Or prevent text selection for specific elements */
+.prevent-selection {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE 10+/Edge */
+  user-select: none;
+  /* Standard syntax */
+}
+.page-section {
+  background: #FAFAFB;
+  padding: 8vw;
+  padding-top: 0px !important;
+}
+.page-section.green {
+  background: #F2FCF5;
+}
+.page-section.white {
+  background: #ffffff;
+}
+.page-section .page-title {
+  font-size: 3em;
+  font-family: PlatNomor;
+  font-weight: 700;
+  padding-bottom: 0.5em;
+  padding-top: 1.3em;
+  color: #444;
+}
+.page-section .page-title.light {
+  color: #fff;
+}
+.page-section .page-title.right {
+  text-align: right;
+}
+.page-section .page-title span {
+  color: #05AD0A;
+}
+@media screen and (max-width: 992px) {
+  .page-section .page-title {
+    font-size: 1.6em;
+  }
+}
+.simple-alert {
+  border: none !important;
+  background: none !important;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.simple-alert.alert-danger {
+  color: #d62828 !important;
+}
+.simple-alert.alert-success {
+  color: #05AD0A !important;
 }
 
