@@ -231,6 +231,85 @@
   color: #777;
 }
 
+.dtoc-slideshow {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.dtoc-slideshow .slide {
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  transform: translateX(-60px) skewX(-10deg);
+}
+.dtoc-slideshow .slide .inner {
+  transform: skewX(10deg);
+}
+.dtoc-slideshow .content {
+  text-align: right;
+  z-index: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.dtoc-slideshow .content .text-slide {
+  text-align: right;
+}
+.dtoc-slideshow .content .text-slide .page-title {
+  padding-top: 1em;
+  padding-bottom: 0px;
+}
+.dtoc-slideshow .content .text-slide .description {
+  font-size: 1.2em;
+  color: #777;
+  font-family: Inter;
+}
+.dtoc-slideshow .controls {
+  z-index: 2;
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+}
+.dtoc-slideshow button {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+.dtoc-slideshow button:hover {
+  color: #d62828;
+}
+.dtoc-slideshow button:nth-of-type(odd) {
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+}
+.dtoc-slideshow button:nth-of-type(even) {
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+@media screen and (max-width: 992px) {
+  .dtoc-slideshow .slide {
+    transform: translateY(-2em) skewY(-7deg);
+    position: relative;
+  }
+  .dtoc-slideshow .slide .inner {
+    transform: skewY(7deg);
+  }
+  .dtoc-slideshow .page-section.slide-show {
+    margin-top: -2.2em;
+  }
+  .dtoc-slideshow .page-section.slide-show .text-slide {
+    position: relative;
+  }
+  .dtoc-slideshow .page-section.slide-show .text-slide .page-title {
+    font-size: 3em;
+  }
+  .dtoc-slideshow .page-section.slide-show .text-slide .description {
+    font-size: 1em !important;
+  }
+}
+
 .testimonials {
   background-color: #F2FCF5 !important;
 }
@@ -681,79 +760,6 @@
   margin-top: 30px;
 }
 
-.dtoc-slideshow {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-.dtoc-slideshow .slide {
-  z-index: 1;
-  overflow: hidden;
-  display: block;
-  position: absolute;
-  transform: translateX(-60px) skewX(-10deg);
-  height: 100%;
-}
-.dtoc-slideshow .slide .inner {
-  transform: skewX(10deg);
-}
-.dtoc-slideshow .content {
-  text-align: right;
-  z-index: 0;
-  height: 100%;
-  position: absolute;
-  right: 0;
-}
-.dtoc-slideshow .content .text-slide {
-  text-align: right;
-}
-.dtoc-slideshow .content .text-slide .page-title {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.dtoc-slideshow .content .text-slide .description {
-  font-size: 1.2em;
-  color: #777;
-  font-family: Inter;
-}
-.dtoc-slideshow .controls {
-  z-index: 2;
-  padding-top: 10px;
-  position: absolute;
-  width: 100%;
-}
-.dtoc-slideshow button {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  border: none;
-  background: rgba(255, 255, 255, 0.7);
-}
-.dtoc-slideshow button:hover {
-  color: #d62828;
-}
-.dtoc-slideshow button:nth-of-type(odd) {
-  border-top-left-radius: 45%;
-  border-bottom-left-radius: 45%;
-}
-.dtoc-slideshow button:nth-of-type(even) {
-  border-top-right-radius: 45%;
-  border-bottom-right-radius: 45%;
-}
-@media screen and (max-width: 992px) {
-  .dtoc-slideshow .slide {
-    transform: none;
-  }
-  .dtoc-slideshow .text-slide .page-title {
-    font-size: 3em;
-  }
-  .dtoc-slideshow .text-slide .description {
-    background: rgba(255, 255, 255, 0.85);
-    color: black !important;
-    padding: 2em;
-    border-radius: 6px;
-  }
-}
-
 .about-us-container {
   margin-top: 70px;
 }
@@ -864,7 +870,7 @@
 }
 .team .team-image .image-container {
   width: 100%;
-  height: 200px;
+  height: 260px;
   border-radius: 5px;
   overflow: hidden;
   border: 1px solid #ffffff;
@@ -873,7 +879,7 @@
 .team .team-image .image-container .image {
   height: auto;
   width: 100%;
-  aspect-ratio: 1 / 2;
+  aspect-ratio: 0.9;
 }
 .team .team-image .info {
   margin-top: 30px;
@@ -934,14 +940,34 @@
 
 .page-section.marketing-intro .description {
   color: #777;
+  text-align: justify;
 }
 .page-section.marketing-intro .ReactGridGallery_tile-bottom-bar > div span {
   color: #F2FCF5 !important;
+}
+.fullpage-image-modal .image-gallery-svg {
+  color: #444;
+}
+.fullpage-image-modal .closeButton {
+  background: none;
+  position: absolute;
+  right: 0;
+  margin: 1em;
+  z-index: 1;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.fullpage-image-modal .closeButton:hover {
+  border: 2px solid #05AD0A;
 }
 
 .marketing-landing-container {
   width: 100%;
   height: 100vh;
+}
+.marketing-landing-container .dtocButton-outline {
+  margin-top: 1em;
 }
 .marketing-landing-container .marketing-carousel .slide-container {
   width: 100%;
@@ -1054,11 +1080,12 @@
 }
 .dtocButton-outline {
   border: unset !important;
-  border-radius: 2px !important;
+  border-radius: 3em !important;
   background-size: 200% 100% !important;
   font-family: PlatNomor !important;
   font-weight: bold !important;
   letter-spacing: 1px;
+  padding-top: 8px !important;
   background-image: linear-gradient(to right, #d62828 50%, #B00000 50%) !important;
   -webkit-transition: background-position 0.3s !important;
   -moz-transition: background-position 0.3s !important;
