@@ -216,6 +216,7 @@
 
 .page-section.faq {
   background: #F2FCF5;
+  padding-bottom: 6em;
 }
 .page-section.faq .accordion-button:not(.collapsed) {
   background: #05AD0A;
@@ -346,13 +347,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 150px;
+  height: 160px;
+  background: #F2FCF5;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .reach .counters div:nth-child(1) {
-  font-size: 3em;
+  font-size: 2em;
 }
 .reach .counters div:nth-child(2) {
-  color: #d62828;
-  font-size: 1.5em;
+  color: #05AD0A;
+  font-size: 1.2em;
   font-family: Platnomor;
 }
 @media screen and (max-width: 992px) {
@@ -812,15 +817,25 @@
 }
 .page-section.founder .counters {
   margin-top: 3em;
+  width: 100%;
   font-weight: 900;
   font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 160px;
+  background: #F2FCF5;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 }
 .page-section.founder .counters div:nth-child(1) {
-  font-size: 4em;
+  font-size: 2em;
 }
 .page-section.founder .counters div:nth-child(2) {
   color: #05AD0A;
-  font-size: 1em;
+  font-size: 1.2em;
+  font-family: Platnomor;
 }
 
 .team {
