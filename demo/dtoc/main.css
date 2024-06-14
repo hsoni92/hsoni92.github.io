@@ -177,7 +177,7 @@
 }
 .get-in-touch-landing .get-in-touch {
   padding-top: 15px !important;
-  height: 100vh;
+  height: 115vh;
   background: #05AD0A;
 }
 .get-in-touch-landing .get-in-touch .page-title {
@@ -189,6 +189,11 @@
 }
 .get-in-touch-landing .get-in-touch .description {
   color: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .get-in-touch-landing .get-in-touch .page-title {
+    margin-top: 1em;
+  }
 }
 
 .contact-details {
@@ -544,6 +549,7 @@
   display: flex;
 }
 .landing-banner-container-mobile .landing-content .info {
+  margin-top: 2.2em;
   z-index: 1;
   width: 100%;
   color: #444;
@@ -569,8 +575,8 @@
   transform: translateY(-10px);
 }
 .landing-banner-container-mobile .landing-content .emergency-form {
-  margin-top: 70px;
   width: 100%;
+  margin-top: -3em;
   background: #fff;
   padding: 40px 20px;
   border-radius: 7px;
@@ -633,13 +639,24 @@
 .landing-banner-container-mobile .floating-corner {
   bottom: 0;
   right: 0;
-  margin: 30px;
+  margin: 10px;
   position: fixed;
-  display: flex;
   z-index: 4;
+  display: flex;
   align-items: center;
 }
+.landing-banner-container-mobile .floating-corner .phone-icon {
+  border-radius: 30px;
+  height: 60px;
+  width: 110px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  background: white;
+  transform: translateX(50px);
+}
 .landing-banner-container-mobile .floating-corner button {
+  z-index: 1;
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -659,6 +676,82 @@
   margin-top: 30px;
 }
 
+.dtoc-slideshow {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.dtoc-slideshow .slide {
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  position: absolute;
+  transform: translateX(-60px) skewX(-10deg);
+  height: 100%;
+}
+.dtoc-slideshow .slide .inner {
+  transform: skewX(10deg);
+}
+.dtoc-slideshow .content {
+  text-align: right;
+  z-index: 0;
+  height: 100%;
+  position: absolute;
+  right: 0;
+}
+.dtoc-slideshow .content .text-slide {
+  text-align: right;
+}
+.dtoc-slideshow .content .text-slide .page-title {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.dtoc-slideshow .content .text-slide .description {
+  font-size: 1.2em;
+  color: #777;
+  font-family: Inter;
+}
+.dtoc-slideshow .controls {
+  z-index: 2;
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+}
+.dtoc-slideshow button {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+.dtoc-slideshow button:hover {
+  color: #d62828;
+}
+.dtoc-slideshow button:nth-of-type(odd) {
+  border-top-left-radius: 45%;
+  border-bottom-left-radius: 45%;
+}
+.dtoc-slideshow button:nth-of-type(even) {
+  border-top-right-radius: 45%;
+  border-bottom-right-radius: 45%;
+}
+@media screen and (max-width: 992px) {
+  .dtoc-slideshow .slide {
+    transform: none;
+  }
+  .dtoc-slideshow .text-slide .page-title {
+    font-size: 3em;
+  }
+  .dtoc-slideshow .text-slide .description {
+    background: rgba(255, 255, 255, 0.85);
+    color: black !important;
+    padding: 2em;
+    border-radius: 6px;
+  }
+}
+
+.about-us-container {
+  margin-top: 70px;
+}
 .about-us-container .ambulance-img {
   height: 100vh !important;
 }
@@ -790,7 +883,6 @@
 }
 
 .page-section.milestones {
-  margin-top: 100vh;
   background: #F2FCF5;
 }
 .page-section.milestones .history-graphic {
