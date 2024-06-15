@@ -295,15 +295,16 @@
   }
   .dtoc-slideshow .slide .inner {
     transform: skewY(7deg);
+    margin-top: 5em;
   }
   .dtoc-slideshow .page-section.slide-show {
-    margin-top: -2.2em;
+    margin-top: -2em;
   }
   .dtoc-slideshow .page-section.slide-show .text-slide {
     position: relative;
   }
   .dtoc-slideshow .page-section.slide-show .text-slide .page-title {
-    font-size: 3em;
+    font-size: 2em;
   }
   .dtoc-slideshow .page-section.slide-show .text-slide .description {
     font-size: 1em !important;
