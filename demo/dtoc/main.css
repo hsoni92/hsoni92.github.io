@@ -349,6 +349,7 @@
 
 .services {
   background-color: #F2FCF5 !important;
+  overflow: hidden !important;
 }
 .services .benefits-card {
   border: none;
