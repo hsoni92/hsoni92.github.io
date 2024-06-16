@@ -1,3 +1,29 @@
+.tag-component {
+  height: 25px;
+}
+.tag-component .mantine-Avatar-placeholder {
+  font-size: 0.9em;
+  height: 25px;
+  padding-left: 7px;
+  padding-right: 7px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.label-box {
+  background-color: #eee;
+  font-size: 0.8em;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 0px;
+  border-radius: 5px;
+}
+.artemis-logo .dodechedron-vector {
+  position: absolute;
+  z-index: 1;
+}
+.artemis-logo .dodechedron-vector.animated {
+  animation: rotation 4s linear infinite;
+}
+
 .login-main-container {
   background: #ecf0f1;
   height: 100vh;
@@ -7,54 +33,84 @@
   align-items: center;
 }
 .login-main-container .login-card {
-  min-width: 500px;
+  overflow: unset;
+  min-width: 420px;
   height: 530px;
   border-radius: 10px !important;
   box-shadow: unset !important;
 }
-.login-main-container .login-card .disabled.input {
-  opacity: 1;
-}
-.login-main-container .login-card .disabled.input input {
-  opacity: 0.45;
-}
-.login-main-container .login-card .alert-message-login {
-  width: 300px;
-}
-.login-main-container .login-card .login-form-el {
-  width: 300px;
-}
-.login-main-container .login-card .content {
-  display: flex;
-  justify-content: center;
-}
-.login-main-container .login-card .content.body {
-  border-top: none;
-}
-.login-main-container .login-card .header {
-  font-size: 2em !important;
-  text-align: center;
-  padding-bottom: 30px;
-}
-.login-main-container .login-card .content-middle-container {
-  margin: 0px 120px 0px 120px;
+.login-main-container .login-card .alert-error .mantine-Alert-message {
+  color: red;
 }
 .login-main-container .login-card .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -40px;
+  margin-top: -70px;
   padding-bottom: 20px;
 }
-.login-main-container .login-card .logo-container img {
-  height: 100px;
-  width: 100px;
+.login-main-container .login-card .logo-container .status-circle {
+  padding: 25px;
+  background: #ffffff;
+  border: 4px solid #eeeeee;
   border-radius: 50%;
-  border: 10px solid #fff;
+  /* Make it a circle by setting border-radius to 50% */
+}
+.login-main-container .login-card .body {
+  display: flex;
+  justify-content: center;
+}
+.login-main-container .login-card .footer {
+  padding-top: 15px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.login-main-container .login-card .footer .button-instance {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.headbar-container {
+  height: 45px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  padding-right: 20px;
 }
 
 .dashboard-page {
-  height: calc(100vh - 150px);
+  height: calc(100vh - 45px - 15px - 15px);
+  overflow: hidden;
+}
+.dashboard-page .grid-container {
+  height: 100%;
+}
+.dashboard-page .grid-container .card-fh {
+  height: calc(calc(100vh - 45px - 15px - 15px) - 2px);
+  overflow-y: hidden;
+}
+.dashboard-page .grid-container .box-health-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #E3F2FD;
+  border-radius: 5px;
+  padding: 10px;
+}
+.dashboard-page .grid-container .box-health-status.yellow {
+  background-color: #FFF8E1;
+}
+.dashboard-page .grid-container .box-health-status.blue {
+  background-color: #E3F2FD;
+}
+.dashboard-page .grid-container .box-health-status.red {
+  background-color: #FFEBEE;
 }
 .list-item-row {
   display: flex;
@@ -102,5 +158,98 @@
 }
 .circle-icon.green {
   background-color: #f1f8e9;
+}
+.circle-icon.gray {
+  background-color: #eeeeee;
+}
+
+.page-filesystem {
+  background: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+}
+.page-filesystem .fs-body {
+  width: 80%;
+  padding: 10px;
+}
+.page-filesystem .fs-panel {
+  width: calc(100% - 80%);
+  border-left: 1px solid #eee;
+  padding: 20px;
+}
+
+.search-page .result-container {
+  overflow: hidden;
+  margin-top: 15px;
+  border-radius: 7px;
+  height: calc(calc(100vh - 45px - 15px - 15px) - 90px);
+}
+.search-page .result-container .list-container {
+  margin-bottom: 33px;
+}
+.search-page .result-container .scroll {
+  height: inherit;
+}
+.search-page .file-item {
+  background-color: #ffffff;
+  padding: 5px;
+  padding-right: 25px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.search-page .file-item .mantine-List-itemWrapper {
+  width: 100%;
+}
+.search-page .file-item .mantine-List-itemWrapper span:nth-child(2) {
+  width: 100%;
+}
+.search-page .search-input {
+  width: 40%;
+}
+.search-page .search-input .mantine-TextInput-input {
+  color: #222 !important;
+}
+.search-page .search-input .mantine-InputWrapper-error {
+  display: flex;
+  justify-content: center;
+  color: #238BE6;
+}
+.search-page .search-input input {
+  height: 40px;
+  border: 0px solid #fff !important;
+  border-radius: 25px;
+}
+
+.content-panel {
+  height: calc(100vh - 45px);
+  display: flex;
+  justify-content: flex-start;
+}
+.content-panel .navigation-section {
+  overflow: hidden;
+  transition: width 0.2s ease;
+}
+.content-panel .navigation-section.opened {
+  width: 230px;
+}
+.content-panel .navigation-section.closed {
+  width: 44px;
+}
+.content-panel .content-section {
+  padding: 15px;
+  width: 100%;
+  background-color: #efefef;
+}
+.content-panel .content-section .segment,
+.content-panel .content-section .segments {
+  box-shadow: unset !important;
+  border: unset !important;
+}
+.content-panel .content-section .segment .workflow,
+.content-panel .content-section .segments .workflow {
+  height: calc(100vh - 45px - 15px - 15px);
+  overflow: hidden;
 }
 
